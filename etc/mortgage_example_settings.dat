@@ -1,0 +1,17 @@
+&settings  ! Settings for the mortgage program
+ house_price_tax             =  200000.0,  ! House price according to the tax authority (e.g. 200000)
+ total_loan                  =  100000.0,  ! Total initial loan for house (e.g. 100000)
+ mortgage_type               =  "annuity", ! Mortgage type: "annuity", "linear"
+ interest_perc               =  3.00,      ! Yearly interest percentage (e.g. 3.0)
+ total_time                  =  30.0,      ! Total mortgage run time in years (e.g. 30)
+ repay_perc                  =  100.0,     ! Percentage of the loan you have to repay in that time (e.g. 100)
+ tax_perc                    =  40.0,      ! Percentage of tax paid = fraction of unpaid interest (e.g. 40)
+ prop_tax_perc               =  0.7,       ! Percentage of tax added value of house over which you pay taxes in Nl (e.g. 0.7)
+ add_repay_year              =  0.0,       ! Yearly additional loan repayment (0)
+ max_monthly_expense         =  0.0,       ! Monthly amount of money you want to spend on housing - set to 0 to ignore
+ max_allowed_yearly_repay    =  20.0,      ! Maximum allowed yearly additional repayment as a percentage of the original loan (20)
+ start_year                  =  1,         ! Year where mortgage begins (e.g. 2010 or simply 1)
+ start_month                 =  1,         ! Month where (assumed on the first day) the mortgage begins (e.g. 1)
+ print_month                 =  12,        ! Month to print yearly data for: 12 for end of year; =start_month for data every 12 months
+ verbose                     =  2,         ! Verbosity: 0-show end result, 1- +input, 2- +monthly costs per year, 3-+additional repayment per year, 4- +every month for first and last year, 5- every month, 9 +convergence
+ /
